@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="TryFirebasePushExtention" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsy-hO-034">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                <state key="normal" title="Some Action"/>
+                                <connections>
+                                    <action selector="customActionButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Sia-3d-IKQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dsy-hO-034" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="TPT-qb-RGM"/>
+                            <constraint firstItem="dsy-hO-034" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" id="ahZ-0z-uAC"/>
+                            <constraint firstItem="dsy-hO-034" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="bZY-rU-dfe"/>
+                            <constraint firstItem="dsy-hO-034" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="yg2-Qm-9Nb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="actionButton" destination="dsy-hO-034" id="Nky-Cw-iIN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
